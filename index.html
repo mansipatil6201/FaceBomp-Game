@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FaceBomp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>😉FaceBomp😉</h1>
+        <button id="startBtn">Start Game</button>
+        <span id="score">Score: 0</span>
+        <span id="timer">Time: 30</span>
+
+        <div class="game-board">
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+            <div class="hole"><img src="./assets/photo.png" alt="face" class="face" /></div>
+        </div>
+
+        <div id="finalMessage">
+            <h2>Game Over!</h2>
+            <p>Your final score is: <span id="finalScore">0</span></p>
+        </div>
+    </div>
+    <div id="end-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Time's Up!</h2>
+            <p id="final-score">You scored 0 points.</p>
+            <button onclick="startGame()">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
